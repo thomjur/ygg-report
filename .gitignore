@@ -2,3 +2,4 @@ archiv/
 data/
 .ipynb_checkpoints/
 __pycache__/
+*.pkl

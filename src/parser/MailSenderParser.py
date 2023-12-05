@@ -12,5 +12,4 @@ def parse_mime_sender(mail: email.message.Message) -> str:
 	-------
 		String of the from: line.
 	'''
-
 	return mail["From"]
