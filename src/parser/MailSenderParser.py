@@ -12,4 +12,7 @@ def parse_mime_sender(mail: email.message.Message) -> str:
 	-------
 		String of the from: line.
 	'''
+	# Check if X-Original-From exists
+	if "X-Original-From" in mail:
+		return mail["X-Original-From"]
 	return mail["From"]
